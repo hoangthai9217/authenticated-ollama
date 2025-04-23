@@ -1,0 +1,18 @@
+name: authenticated-ollama
+
+version: '3.8'
+services:
+  authentication-service:
+    build:
+      context: ./authentication-service
+    container_name: authentication-service
+    ports:
+      - "9090"
+  caddy-server:
+    build:
+      context: ./caddy-server
+    container_name: caddy-server
+    ports:
+      - "8081:8081"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
