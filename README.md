@@ -1,6 +1,6 @@
 # Authenticated Ollama
 
-This project provides an authenticated proxy for the Ollama server using FastAPI and Caddy. It validates API keys before forwarding requests to the Ollama server.
+This project provides an authenticated proxy for the Ollama server using FastAPI and Caddy. It is designed specifically for macOS users who want to self-host an Ollama server and securely connect to it from another machine. Authentication is a crucial feature, ensuring that only authorized users can access the server.
 
 ## Project Structure
 ```
