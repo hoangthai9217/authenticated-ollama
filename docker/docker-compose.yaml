@@ -1,6 +1,5 @@
 name: authenticated-ollama
 
-version: '3.8'
 services:
   authentication-service:
     build:
